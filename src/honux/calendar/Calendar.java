@@ -4,6 +4,7 @@ public class Calendar {
 
 	public static void main(String[] args) {
 		System.out.println(" 일    월    화    수    목    금    토");
+		System.out.println("--------------------");
 		System.out.println("30 31 01 02 03 04 05");
 		System.out.println("06 07 08 09 10 11 12");
 		System.out.println("13 14 15 16 17 18 19");
