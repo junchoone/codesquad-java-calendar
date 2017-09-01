@@ -23,10 +23,17 @@ public class Calendar {
 		
 		Scanner scanner = new Scanner(System.in);
 		Calendar cal = new Calendar();
-		System.out.println("달을 입력하세요");
-		int month = scanner.nextInt();
-		System.out.println(month + "월은 " + cal.getMaxDayOfMonth(month) + "일까지 있습니다.");
-		cal.printSempleCalendar();
+		System.out.println("확인할 횟수를 입력하세요");
+		int repeat = scanner.nextInt();
+		
+		for(int i=0; i < repeat; i++) {
+			System.out.println((i+1)+"번째 확인할 달을 입력하세요");
+			int month = scanner.nextInt();
+			System.out.println(month + "월은 " + cal.getMaxDayOfMonth(month) + "일까지 있습니다.");
+//			cal.printSempleCalendar();			
+		}
+		scanner.close();
+		System.out.println("프로그램을 마침니다");
 	}
 
 }
